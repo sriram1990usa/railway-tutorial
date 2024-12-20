@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "CHANGE_ME"
 if 'SECRET_KEY' in os.environ:
     SECRET_KEY = os.environ["SECRET_KEY"]
-DEBUG = True
+DEBUG = False
 
 #ALLOWED_HOSTS = ['https://web-production-6882.up.railway.app/', '*']
 ALLOWED_HOSTS = ['*']
