@@ -16,7 +16,7 @@ import json
 
 def hom(request):
     # return HttpResponse('from home.views.home') ## ok
-    return render(request, 'home/home.html')
+    return render(request, 'home/index.html')
 
 def search(request):
     print('ln 22 in views.search')
