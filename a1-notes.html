@@ -1,0 +1,37 @@
+https://itsourcecode.com/free-projects/python-projects/railway-reservation-system-project-in-django-with-source-code/
+
+virtualenv venv 
+activate
+pip install django 
+pip freez > requirements.txt 
+pip install -r requirements.txt 
+python manage.py createsuperuser 
+
+settings.py 
+ 
+APPEND_SLASH = True
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+localhost:8000/admin 
+routestation
+rid 1
+sid_id KBK 
+tno_id 1
+atime 10.00pm
+order 2
+
+python manage.py makemigrations 
+python manage.py migrate
+ 
+python manage.py migrate --run-syncdb   
+
+<form action="xxx/" method="post" >
+    {% csrf_token %}>
+        ------- 
+</form>
+from django.views.decorators.csrf import csrf_exempt
+@csrf_exempt
+
+CSRF_TRUSTED_ORIGINS=['http://localhost', 'http://127.0.0.1']
+
+urlpatterns = patterns('', url(r'^allvideo/?$','my.views.allvideo'))

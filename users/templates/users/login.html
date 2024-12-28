@@ -1,0 +1,18 @@
+{% extends "home/base.html" %}
+  {% block body %}
+    <div class="log">
+         <h2 style="text-align:center; color: white;">Login</h2>
+         <h3 style="color:yellow;">from users/login.html </h3>
+        <br/>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <span class="sty"> Username: </span><input type="text" name="username" required=""><br><br>
+            <span class="sty"> Password: </span><input type="password" name="password" required=""><br/></br></br>
+
+            <h4><input type="submit" class="btn btn-success" value="Login"></h4><br/>
+
+        </form>
+        <h4 style="color:yellow">If not registered <a href="/register/" > <button class="btn btn-success" >Register</button></a></h4>
+    </div>
+    {% endblock %}

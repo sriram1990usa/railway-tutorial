@@ -1,0 +1,41 @@
+    {% extends './base.html' %}
+    {% block body %}
+    {% load static %}
+    <style>
+        body{
+            background-image:url('{% static "images/search.jpg" %}');
+            background-size:100%;
+            background-repeat:no-repeat;
+        }
+        .sty
+        {
+            font-family: 'Dancing Script', cursive;
+            color:white;
+        }
+        .hd
+        {
+            margin-left:400px;
+
+            }
+         .tform{
+            background-color:rgba(0,0,0,0.3);
+            }
+            .fpnr
+            {
+                width:20%;
+                margin-left:500px;
+                margin-top:150px;
+                padding:15px;
+                background-color:rgba(0,0,0,0.3);
+                }
+
+        .tick{
+            width:20%;
+            height:150px;
+           background-image:url('{% static "images/ticket6"%}');
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            }
+    </style>
+  
+    {% endblock %}
